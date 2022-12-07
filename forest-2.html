@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Williams - Gallery</title>
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery-style.css">
+
+
+    <!-- Internal CSS -->
+    <style>
+        .row {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Change Column Count to change Columns in the Gallery */
+        #app {
+            -webkit-column-count: 4;
+            -moz-column-count: 4;
+            column-count: 2;
+            -webkit-column-gap: 15px;
+            -moz-column-gap: 15px;
+            column-gap: 15px;
+        }
+
+        @media (max-width: 576px) {
+            #app {
+                column-gap: 5px;
+            }
+
+            #app img {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light mx-md-5 mx-3 my-2">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand text-dark">John Williams</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 ms-md-auto mb-lg-0 justify-content-center align-items-center my-2">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="gallery-1.html">Gallery 1x1</a></li>
+                            <li><a class="dropdown-item" href="gallery-2.html">Gallery 2x2</a></li>
+                            <li><a class="dropdown-item" href="gallery-3.html">Gallery 3x3</a></li>
+                            <li><a class="dropdown-item" href="gallery-4.html">Gallery 4x4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Video
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="video-1.html">Video 1x1</a></li>
+                            <li><a class="dropdown-item" href="video-2.html">Video 2x2</a></li>
+                            <li><a class="dropdown-item" href="video-3.html">Video 3x3</a></li>
+                            <li><a class="dropdown-item" href="video-4.html">Video 4x4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Collection
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="col-1.html">Collection 1x1</a></li>
+                            <li><a class="dropdown-item" href="col-2.html">Collection 2x2</a></li>
+                            <li><a class="dropdown-item" href="col-3.html">Collection 3x3</a></li>
+                            <li><a class="dropdown-item" href="col-4.html">Collection 4x4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exhibit.html">Exhibit</a>
+                    </li>
+                </ul>
+                <div class="icons ms-2 d-none d-md-block">
+                    <a href="#" class="text-dark"><i class="bi bi-instagram mx-2"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-share mx-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery -->
+    <section class="collection-gallery">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="row">
+                    <div class=" pt-md-4 px-md-4 px-0 pb-1 pb-md-3">
+                        <div class="row  pb-3">
+                            <div id="app">
+                                <img src="img/pexels-rudolf-jakkel-418831.jpg" alt="" class="workCls">
+                                <img src="img/ahmad-pishnamazi-mbK30Mu4X6Y-unsplash.jpg" alt="" class="workCls">
+                                <img src="img/moritz-lange-sGGFcc7wrp4-unsplash.jpg" alt="" class="workCls">
+                                <img src="img/pexels-veeterzy-38136.jpg" alt="" class="workCls">
+                                <img src="img/pexels-pixabay-247431.jpg" alt="" class="workCls">
+                                <img src="img/lucas-ludwig-aHgaWNVHepA-unsplash.jpg" alt="" class="workCls">
+                                <img src="img/mojtaba-mohtashami-GdWPGZdPvoo-unsplash.jpg" alt="" class="workCls">
+                                <img src="img/abhishek-kirloskar-0k1InuExBfY-unsplash.jpg" alt="" class="workCls">
+                                <img src="img/tanja-tay-4tYprF1KzBs-unsplash.jpg" alt="" class="workCls">
+                                <img src="img/pexels-kaique-rocha-775201.jpg" alt="" class="workCls">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-container w-100">
+        <div
+            class="d-flex flex-column flex-md-row justify-content-md-between justify-content-center align-items-center gap-3">
+            <div class="footer-content-left d-flex align-items-center">
+                <a href="#" class="text-dark"><i class="bi bi-instagram mx-2"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-share mx-2"></i></a>
+            </div>
+            <h5 class="me-md-auto">Copyright Text comes Here</h5>
+            <div class="footer-content-right">
+                <h5>
+                    Made with <a href="#" class="text-dark">Udee Space</a>
+                </h5>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript"
+        src="https://udee.space/storage/app/public/community/assets/js/img-previewer.min.js"></script>
+    <script>
+        const a = new ImgPreviewer('body', {
+            scrollbar: true
+        })
+    </script>
+</body>
+
+</html>
